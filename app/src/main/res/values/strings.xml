@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="enter_r1_value">enter R1 value</string>
+    <string name="enter">ENTER</string>
+</resources>

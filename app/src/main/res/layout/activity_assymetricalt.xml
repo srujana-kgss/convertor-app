@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".assymetricalt">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:id="@+id/asyt"
+                app:srcCompat="@drawable/asymt"/>
+
+            <EditText
+                android:id="@+id/inputR1value"
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/asyt"
+                android:paddingLeft="10dp"
+                android:hint="Enter Input Impedence"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textColorHint="#7A7373"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:id="@+id/inputR2VALUE"
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter Output Impedence"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textColorHint="#615D5D"
+                android:layout_below="@+id/inputR1value"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:id="@+id/attenuation"
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/inputR2VALUE"
+                android:paddingLeft="10dp"
+                android:hint="Enter Attenuation(db)"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textColorHint="#615D5D"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:id="@+id/calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/averia_sans_libre_light"
+                android:layout_below="@+id/attenuation"
+                android:text="CALCULATE"
+                app:backgroundTint="#0277BD"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/outputtext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/calculate"
+                android:fontFamily="@font/averia_sans_libre_light"
+                android:text="OUTPUT"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

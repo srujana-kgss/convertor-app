@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+
+
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="CONVERTER"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/startodelta"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/heading"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:fontFamily="@font/averia_sans_libre_light"
+                android:gravity="center"
+                android:text="Star ⇒ Delta"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/deltatostar"
+                android:layout_below="@id/startodelta"
+                android:fontFamily="@font/averia_sans_libre_light"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Delta ⇒ Star"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/deltatostar"
+                android:layout_marginTop="15dp"
+                android:id="@+id/forpi"
+                android:text="Zoc,Zsc,Zi,Zt for ⫪ network"
+                android:fontFamily="@font/averia_sans_libre_light"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/forpi"
+                android:layout_marginTop="15dp"
+                android:text="Zoc,Zsc,Zi,Zt for T network"
+                android:fontFamily="@font/averia_sans_libre_light"
+                android:gravity="center"
+                android:id="@+id/forT"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+
+            <TextView
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/forT"
+                android:layout_marginTop="15dp"
+                android:text="Za,Zb,Zc for ⫪ network"
+                android:fontFamily="@font/averia_sans_libre_light"
+                android:gravity="center"
+                android:id="@+id/elementspi"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+
+            <TextView
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/elementspi"
+                android:layout_marginTop="15dp"
+                android:text="Za,Zb,Zc for T network"
+                android:fontFamily="@font/averia_sans_libre_light"
+                android:gravity="center"
+                android:id="@+id/elementsT"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/elementsT"
+                android:layout_marginTop="15dp"
+                android:text="Attenuator for \n symmetrical T network"
+                android:fontFamily="@font/averia_sans_libre_light"
+                android:gravity="center"
+                android:id="@+id/symmetricalT"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/symmetricalT"
+                android:layout_marginTop="15dp"
+                android:text="Attenuator for \n symmetrical ⫪ network"
+                android:fontFamily="@font/averia_sans_libre_light"
+                android:gravity="center"
+                android:id="@+id/symmetricalpi"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+               />
+
+            <TextView
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/symmetricalpi"
+                android:layout_marginTop="15dp"
+                android:text="Attenuator for \n asymmetrical T network"
+                android:fontFamily="@font/averia_sans_libre_light"
+                android:gravity="center"
+                android:id="@+id/asymmetricalt"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/asymmetricalt"
+                android:layout_marginTop="15dp"
+                android:text="Attenuator for \n asymmetrical ⫪ network"
+                android:fontFamily="@font/averia_sans_libre_light"
+                android:gravity="center"
+                android:id="@+id/asymmetricalpi"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/asymmetricalpi"
+                android:layout_marginTop="15dp"
+                android:text="2 port Network Parameters"
+                android:fontFamily="@font/averia_sans_libre_light"
+                android:gravity="center"
+                android:id="@+id/parameters"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

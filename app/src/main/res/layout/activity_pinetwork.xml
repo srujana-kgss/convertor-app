@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".pinetwork">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/pii"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/pi"/>
+
+    <EditText
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/pii"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:hint="Enter real value of ZA"
+        android:id="@+id/ZAr"
+        android:textColor="@color/black"
+        android:textColorHint="#7A7373"
+        android:inputType="numberSigned"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/ZAr"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter imaginary value of ZA"
+                android:id="@+id/ZAi"
+                android:textColor="@color/black"
+                android:textColorHint="#7A7373"
+                android:inputType="numberSigned"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+    <EditText
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:hint="Enter real value of ZB"
+        android:layout_below="@+id/ZAi"
+        android:id="@+id/ZBr"
+        android:textColor="@color/black"
+        android:textColorHint="#7A7373"
+        android:inputType="numberSigned"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter imaginary value of ZB"
+                android:layout_below="@+id/ZBr"
+                android:id="@+id/ZBi"
+                android:textColor="@color/black"
+                android:textColorHint="#7A7373"
+                android:inputType="numberSigned"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+    <EditText
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:hint="Enter real value of ZC"
+        android:id="@+id/ZCr"
+        android:textColor="@color/black"
+        android:layout_below="@+id/ZBi"
+        android:textColorHint="#7A7373"
+        android:inputType="numberSigned"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter imaginary value of ZC"
+                android:id="@+id/ZCi"
+                android:textColor="@color/black"
+                android:layout_below="@+id/ZCr"
+                android:textColorHint="#7A7373"
+                android:inputType="numberSigned"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+    <Button
+        android:id="@+id/calculateforpi"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ZCi"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/averia_sans_libre_light"
+        android:text="CALCULATE"
+        app:backgroundTint="#0277BD"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_below="@id/calculateforpi"
+        android:id="@+id/outputforpi"
+        android:fontFamily="@font/averia_sans_libre_light"
+        android:text="output"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

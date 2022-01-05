@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".networkparam">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/spin"
+                android:backgroundTint="@color/black"
+                android:popupBackground="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                />
+
+
+
+            <EditText
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/spin"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border"
+                android:hint="real value of Z11/Y11/h11/A"
+                android:inputType="numberSigned"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#7A7373" />
+
+            <EditText
+                android:id="@+id/second"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/first"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border"
+                android:hint="Imaginary value of Z11/Y11/h11/A"
+                android:inputType="numberSigned"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#7A7373" />
+
+            <EditText
+                android:id="@+id/third"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/second"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border"
+                android:hint="Real value of Z12/Y12/h12/B"
+                android:inputType="numberSigned"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#7A7373" />
+
+            <EditText
+                android:id="@+id/four"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/third"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border"
+                android:hint="Imaginary value of Z12/Y12/h12/B"
+                android:inputType="numberSigned"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#7A7373" />
+
+            <EditText
+                android:id="@+id/five"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/four"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border"
+                android:hint="Real value of Z21/Y21/h21/C"
+                android:inputType="numberSigned"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#7A7373" />
+
+            <EditText
+                android:id="@+id/six"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/five"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border"
+                android:hint="Imaginary value of Z21/Y21/h21/C"
+                android:inputType="numberSigned"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#7A7373" />
+
+            <EditText
+                android:id="@+id/seven"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/six"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border"
+                android:hint="Real value of Z22/Y22/h22/D"
+                android:inputType="numberSigned"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#7A7373" />
+
+            <EditText
+                android:id="@+id/eight"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/seven"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border"
+                android:hint="Imaginary value of Z22/Y22/h22/D"
+                android:inputType="numberSigned"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#7A7373" />
+
+
+            <Button
+
+                android:id="@+id/calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eight"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/averia_sans_libre_light"
+                android:text="CALCULATE"
+                android:textColor="@color/white"
+                app:backgroundTint="#0277BD" />
+
+            <TextView
+                android:id="@+id/output"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/calculate"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/averia_sans_libre_light"
+                android:text="output"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

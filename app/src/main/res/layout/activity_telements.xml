@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".telements">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/telements"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/tn"/>
+
+            <EditText
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/telements"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter real value of ZOC1"
+                android:id="@+id/ZOC1rT"
+                android:textColor="@color/black"
+                android:textColorHint="#7A7373"
+                android:inputType="numberSigned"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/ZOC1rT"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter imaginary value of ZOC1"
+                android:id="@+id/ZOC1iT"
+                android:textColor="@color/black"
+                android:textColorHint="#7A7373"
+                android:inputType="numberSigned"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter real value of ZOC2"
+                android:layout_below="@+id/ZOC1iT"
+                android:id="@+id/ZOC2rT"
+                android:textColor="@color/black"
+                android:textColorHint="#7A7373"
+                android:inputType="numberSigned"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter imaginary value of ZOC2"
+                android:layout_below="@+id/ZOC2rT"
+                android:id="@+id/ZOC2iT"
+                android:textColor="@color/black"
+                android:textColorHint="#7A7373"
+                android:inputType="numberSigned"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter real value of ZSC1"
+                android:id="@+id/ZSC1rT"
+                android:textColor="@color/black"
+                android:layout_below="@+id/ZOC2iT"
+                android:textColorHint="#7A7373"
+                android:inputType="numberSigned"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter imaginary value of ZSC1"
+                android:id="@+id/ZSC1iT"
+                android:textColor="@color/black"
+                android:layout_below="@+id/ZSC1rT"
+                android:textColorHint="#7A7373"
+                android:inputType="numberSigned"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+
+            <EditText
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:hint="Enter real value of ZSC2"
+                android:id="@+id/ZSC2rT"
+                android:textColor="@color/black"
+                android:layout_below="@+id/ZSC1iT"
+                android:textColorHint="#7A7373"
+                android:inputType="numberSigned"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter imaginary value of ZSC2"
+            android:id="@+id/ZSC2iT"
+            android:textColor="@color/black"
+            android:layout_below="@+id/ZSC2rT"
+            android:textColorHint="#7A7373"
+            android:inputType="numberSigned"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+            <Button
+                android:id="@+id/calculatefortelements"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ZSC2iT"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/averia_sans_libre_light"
+                android:text="CALCULATE"
+                app:backgroundTint="#0277BD"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/calculatefortelements"
+                android:id="@+id/outputfortelements"
+                android:fontFamily="@font/averia_sans_libre_light"
+                android:text="output"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

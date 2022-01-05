@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity3">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/stod"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/star"/>
+
+
+            <EditText
+        android:background="@drawable/border"
+        android:id="@+id/Ravalue"
+        android:layout_width="match_parent"
+               android:layout_below="@+id/stod"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="ENTER Ra VALUE"
+        android:textColor="@color/black"
+
+        android:textColorHint="#7A7373"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:background="@drawable/border"
+        android:id="@+id/Rbvalue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/Ravalue"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="ENTER Rb VALUE"
+        android:textColor="@color/black"
+        android:textColorHint="#7A7373"
+        android:inputType="numberDecimal"
+        />
+    <EditText
+        android:background="@drawable/border"
+        android:id="@+id/Rcvalue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/Rbvalue"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="ENTER Rc VALUE"
+        android:textColor="@color/black"
+        android:textColorHint="#7A7373"
+        android:inputType="numberDecimal"
+        />
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calculatefordeltatostar"
+        android:layout_below="@+id/Rcvalue"
+        android:textColor="@color/white"
+        android:fontFamily="@font/averia_sans_libre_light"
+        android:layout_marginTop="16dp"
+        app:backgroundTint="#0277BD"
+        android:text="CALCULATE"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/calculatefordeltatostar"
+        android:layout_marginTop="20dp"
+        android:id="@+id/outputfordeltatostar"
+        android:fontFamily="@font/averia_sans_libre_light"
+        android:text="output"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
